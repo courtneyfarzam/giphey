@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
+import searchPng from '@/public/images/search.gif';
 import navData from './navData';
 
 const Header = () => {
@@ -12,8 +13,8 @@ const Header = () => {
         <>
             {/* Nav Logo */}
             <div>
-                <Link href="/">
-                    <Image src="/logo.png" alt="Logo" width="100" height="100" />
+                <Link href='/'>
+                        <Image src={searchPng} alt='Search Glass' width='100' height='100' />
                 </Link>
             </div>
 
@@ -35,7 +36,7 @@ const Header = () => {
                     
                     {/* Search Bar */}
                     <div>
-                        <Image src="/search.png" alt="Search Glass" width="20" height="20" />
+                        <Image src={searchPng} alt='Search Glass' width='20' height='20' />
                     </div>
                 </nav>
             </header>
