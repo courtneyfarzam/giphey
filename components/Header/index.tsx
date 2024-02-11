@@ -19,6 +19,7 @@ const Header = () => {
 
             <header>
                 <nav>
+                    {/* Nav Links */}
                     <ul>
                         {navData.map((nav) => (
                             <li key={nav.id}>
@@ -31,6 +32,11 @@ const Header = () => {
                             </li>
                         ))}
                     </ul>
+                    
+                    {/* Search Bar */}
+                    <div>
+                        <Image src="/search.png" alt="Search Glass" width="20" height="20" />
+                    </div>
                 </nav>
             </header>
         </>
