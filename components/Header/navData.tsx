@@ -1,4 +1,4 @@
-import { Nav } from '@./types/nav';
+import { Nav } from '@/types/navTypes';
 
 const navData: Nav[] = [
 	{
